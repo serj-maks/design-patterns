@@ -1,8 +1,8 @@
 package edu.serjmaks.patterns.creational.factory;
 
-public class WoodenDoor implements Door {
-    protected int width;
-    protected int height;
+class WoodenDoor implements Door {
+    private int width;
+    private int height;
 
     public WoodenDoor(int width, int height) {
         this.width = width;

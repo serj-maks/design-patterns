@@ -9,9 +9,10 @@ import edu.serjmaks.patterns.creational.builder.model.component.Transmission;
 
 public class Demo {
     public static void main(String[] args) {
+        CarBuilder carBuilder = new CarBuilder();
+
         // create via director class
         Director director = new Director();
-        CarBuilder carBuilder = new CarBuilder();
         director.createSedan(carBuilder);
         Car sedan = carBuilder.build();
         System.out.println(sedan.getType());

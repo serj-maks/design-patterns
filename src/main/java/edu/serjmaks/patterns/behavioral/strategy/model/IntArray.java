@@ -17,16 +17,16 @@ public class IntArray {
         this.sortStrategy = new BubbleSortStrategy();
     }
 
+    public void setSortStrategy(SortStrategy sortStrategy) {
+        this.sortStrategy = sortStrategy;
+    }
+
     public void set(int index, int value) {
         intArray[index] = value;
     }
 
     public int length() {
         return intArray.length;
-    }
-
-    public void setSortStrategy(SortStrategy sortStrategy) {
-        this.sortStrategy = sortStrategy;
     }
 
     public void sort() {

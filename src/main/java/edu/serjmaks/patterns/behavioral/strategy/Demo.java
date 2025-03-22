@@ -5,7 +5,7 @@ import edu.serjmaks.patterns.behavioral.strategy.strategy.SelectionSortStrategy;
 
 import java.util.Random;
 
-public class Demo {
+class Demo {
     public static void main(String[] args) {
         IntArray array = new IntArray(10);
 

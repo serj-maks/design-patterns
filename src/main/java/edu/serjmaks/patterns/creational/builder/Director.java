@@ -7,12 +7,11 @@ import edu.serjmaks.patterns.creational.builder.model.component.Gps;
 import edu.serjmaks.patterns.creational.builder.model.component.Transmission;
 
 /**
- * Director defines the order of building steps. It works with a builder object
- * through common Builder interface. Therefore it may not know what product is
+ * director defines the order of building steps. It works with a builder object
+ * through common Builder interface. Therefore, it may not know what product is
  * being built
  */
-public class Director {
-
+class Director {
     public void createSedan(Builder builder) {
         builder.setCarType(Type.SEDAN);
         builder.setSeats(4);
