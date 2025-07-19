@@ -1,6 +1,6 @@
 package edu.serjmaks.patterns.structural.facade;
 
-import edu.serjmaks.patterns.structural.facade.computer.*;
+import edu.serjmaks.patterns.structural.facade.computerImpl.*;
 import lombok.AllArgsConstructor;
 
 import java.util.List;

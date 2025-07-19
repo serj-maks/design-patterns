@@ -1,13 +1,16 @@
 package edu.serjmaks.patterns.behavioral.command;
 
-
-import edu.serjmaks.patterns.behavioral.command.command.Command;
-
 // invoker
 // вызывающий, с которым будет взаимодействовать клиент для обработки команд
 public class RemoteControl {
 
-    public void submit(Command command) {
+    private Command command;
+
+    public void setCommand(Command command) {
+       this.command = command;
+    }
+
+    public void pressButton() {
         command.execute();
     }
 }
